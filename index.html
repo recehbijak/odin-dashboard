@@ -4,38 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="sidebar">
-        <div class="logo">
-            
+        <div class="dashboard-logo">
+            <img src="./images/" alt="Dashboard Icon" height="50" width="50" class="dashboard-icon">
+            <p class="dashboard-title">Dashboard</p>
         </div>
         <div class="top-nav">
-            <img src="../images/" alt="Home Navigation Icon" height="50" width="50" class="nav-icon">
+            <img src="./images/" alt="Home Navigation Icon" height="50" width="50" class="nav-icon">
             <p class="nav-page">Home</p>
-            <img src="../images/" alt="Profile Navigation Icon" height="50" width="50" class="nav-icon">
+            <img src="./images/" alt="Profile Navigation Icon" height="50" width="50" class="nav-icon">
             <p class="nav-page">Profile</p>
-            <img src="../images/" alt="Messages Navigation Icon" height="50" width="50" class="nav-icon">
+            <img src="./images/" alt="Messages Navigation Icon" height="50" width="50" class="nav-icon">
             <p class="nav-page">Messages</p>
-            <img src="../images/" alt="History Navigation Icon" height="50" width="50" class="nav-icon">
+            <img src="./images/" alt="History Navigation Icon" height="50" width="50" class="nav-icon">
             <p class="nav-page">History</p>
-            <img src="../images/" alt="Tasks Navigation Icon" height="50" width="50" class="nav-icon">
+            <img src="./images/" alt="Tasks Navigation Icon" height="50" width="50" class="nav-icon">
             <p class="nav-page">Tasks</p>
-            <img src="../images/" alt="Communities Navigation Icon" height="50" width="50" class="nav-icon">
+            <img src="./images/" alt="Communities Navigation Icon" height="50" width="50" class="nav-icon">
             <p class="nav-page">Communities</p>
         </div>
         <div class="bottom-nav">
-            <img src="../images/" alt="Settings Navigation Icon" height="50" width="50" class="nav-icon">
+            <img src="./images/" alt="Settings Navigation Icon" height="50" width="50" class="nav-icon">
             <p class="nav-page">Settings</p>
-            <img src="../images/" alt="Support Navigation Icon" height="50" width="50" class="nav-icon">
+            <img src="./images/" alt="Support Navigation Icon" height="50" width="50" class="nav-icon">
             <p class="nav-page">Support</p>
-            <img src="../images/" alt="Privacy Navigation Icon" height="50" width="50" class="nav-icon">
+            <img src="./images/" alt="Privacy Navigation Icon" height="50" width="50" class="nav-icon">
             <p class="nav-page">Privacy</p>
         </div>
     </div>
     <div class="content-wrapper">
-        <div class="top-bar"></div>
-        <div class="user-action"></div>
+        <div class="top-bar">
+            <div class="top-bar-left"></div>
+            <div class="top-bar-right"></div>
+        </div>
+        <div class="user-action">
+            <div class="user-greeting"></div>
+            <div class="user-action button"></div>
+        </div>
         <div class="user-digest"></div>
     </div>
 </body>
