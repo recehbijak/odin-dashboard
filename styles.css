@@ -58,7 +58,7 @@ body {
 .page-container {
     display: grid;
     grid-template-columns: 350px 1fr;
-    height: 100vw;
+    height: 100vh;
 }
 
 .sidebar {
@@ -127,4 +127,75 @@ body {
 .profile-container p {
     font-size: 1.2em;
     font-weight: 600;
+}
+
+.second-bar {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 0 50px;
+}
+
+.user-greeting {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 5px;
+    justify-items: start;
+    align-items: center;
+    grid-column: 1 / 4;
+    font-weight: 600;
+}
+
+.user-greeting .profile-icon {
+  justify-self: center;
+}
+
+.greeting-message p:last-of-type {
+    font-size: 1.5rem;
+}
+
+.user-actions-container {
+    display: grid;
+    grid-column: -1 / -4;
+    grid-template-columns: repeat(3, 150px);
+    gap: 15px;
+    justify-self: end;
+    justify-items: center;
+    align-items: center;
+}
+
+.user-actions-container button {
+    width: 120px;
+    height: 3rem;
+    border-style: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 25px;
+}
+
+.user-digest {
+    background-color: rgb(206, 214, 223);
+    padding: 3rem 15px;
+    gap: 25px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.user-projects {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.project-cards {
+  display: grid;
+  overflow: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  gap: 25px;
+  padding: 25px;
+}
+
+.card {
+  background-color: var(--secondary-color);
+
 }
