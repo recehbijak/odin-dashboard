@@ -57,11 +57,11 @@
         <div class="content-wrapper">
             <div class="top-bar">
                 <div class="search-container">
-                    <img src="./images/plus.svg" alt="Search Icon" height="25px" width="25px" class="nav-icon">
+                    <img src="./images/plus.svg" alt="Search Icon" height="25px" width="25px" class="search-icon">
                     <input type="text" name="search-bar" id="search-bar">
                 </div>
                 <div class="profile-container">
-                    <img src="./images/plus.svg" alt="Notification Icon" width="25px" height="25px" class="notif-icon">
+                    <img src="./images/plus.svg" alt="Notification Icon" width="25px" height="25px" class="content-icon">
                     <img src="./images/account-circle.svg" alt="User Profile Icon" height="50px" width="50px" class="profile-icon">
                     <p class="user-dropdown">Morgan Freeman</p>
                 </div>
@@ -75,16 +75,28 @@
                     </div>
                 </div>
                 <div class="user-actions-container">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+                    <button class="action-button">New</button>
+                    <button class="action-button">Upload</button>
+                    <button class="action-button">Share</button>
                 </div>
             </div>
             <div class="user-digest">
                 <div class="user-projects">
                     <h2>Your Projects</h2>
                     <div class="project-cards">
-                        <div class="card"></div>
+                        <div class="card">
+                            <div class="card-heading">
+                                <h3>Super Cool Project</h3>
+                            </div>
+                            <div class="card-content">
+                                <p>Loreng Ipsum dolores amit amit what the actual fuck I dont fucking know</p>
+                            </div>
+                            <div class="card-icons">
+                                <img src="./images/plus.svg" alt="" class="content-icon" width="25" height="25">
+                                <img src="./images/plus.svg" alt="" class="content-icon" width="25" height="25">
+                                <img src="./images/plus.svg" alt="" class="content-icon" width="25" height="25">
+                            </div>
+                        </div>
                         <div class="card"></div>
                         <div class="card"></div>
                         <div class="card"></div>
@@ -94,11 +106,53 @@
                 </div>
                 <div class="user-announcements">
                     <h2>Announcements</h2>
-                    <div class="announcements"></div>
+                    <div class="announcements-container">
+                        <div class="announcement-row">
+                            <h3>Site maintenance</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat quis erat et pretium. </p>
+                        </div>
+                        <div class="announcement-row">
+                            <h3>Community Share Day</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat quis erat et pretium. </p>
+                        </div>
+                        <div class="announcement-row">
+                            <h3>Updated Private Policy</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat quis erat et pretium. </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="user-trending">
                     <h2>Trending</h2>
-                    <div class="trending"></div>
+                    <div class="trending-container">
+                        <div class="trending-user">
+                            <img src="./images/account-circle.svg" alt="User" width="75" height="75">
+                            <div class="trending-user-name">
+                                <p>@user1</p>
+                                <p>User 1</p>
+                            </div>
+                        </div>
+                        <div class="trending-user">
+                            <img src="./images/account-circle.svg" alt="User" width="75" height="75" >
+                            <div class="trending-user-name">
+                                <p>@user2</p>
+                                <p>User 2</p>
+                            </div>
+                        </div>
+                        <div class="trending-user">
+                            <img src="./images/account-circle.svg" alt="User" width="75" height="75" >
+                            <div class="trending-user-name">
+                                <p>@user3</p>
+                                <p>User 3</p>
+                            </div>
+                        </div>
+                        <div class="trending-user">
+                            <img src="./images/account-circle.svg" alt="User" width="75" height="75" >
+                            <div class="trending-user-name">
+                                <p>@user4</p>
+                                <p>User 4</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
