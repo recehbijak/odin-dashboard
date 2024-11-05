@@ -54,7 +54,7 @@
 }
 
 body {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 .page-container {
@@ -117,10 +117,20 @@ body {
     padding: 0 50px;
 }
 
-.content-icon:hover,
-.action-button:hover, {
+.content-icon {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.content-icon:hover {
   cursor: pointer;
   background-color: var(--funny-grey);
+}
+
+.action-button:hover {
+  cursor: pointer;
+  background-color: var(--primary-active);
 }
 
 .search-container {
@@ -131,12 +141,17 @@ body {
     align-items: center;
 }
 
-.search-container input[type="text"] {
+#search-bar {
     width: 100%;
     border-style: none;
     border-radius: 15px;
     height: 2rem;
     background-color: var(--funny-grey);
+    padding: 0 30px;
+}
+
+#search-bar:focus {
+  border: 1px solid var(--primary-color);
 }
 
 .profile-container {
@@ -192,6 +207,7 @@ body {
     border-style: none;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    font-weight: 600;
     border-radius: 25px;
 }
 
@@ -223,6 +239,10 @@ body {
   margin: 15px;
   border-radius: 15px;
   border-left: 15px solid var(--accent-color);
+  display: grid;
+  grid-template-rows: 2rem 1fr 3rem;
+  gap: 10px;
+  padding: 50px 25px;
 }
 
 .user-announcements,
@@ -239,16 +259,25 @@ body {
   height: 100%;
   margin: 1rem 1rem 1rem 0;
   border-radius: 15px;
-  padding: 30px;
+  padding: 30px 0;
 }
 
 .announcement-row {
-  padding: 1rem 15px;
+  padding: 1rem 45px;
+  height: 100%;
 }
 
 .announcement-row:not(:last-of-type) {
   border-bottom: solid 1px rgb(165, 165, 165);
 }
+
+
+.trending-user:hover,
+.announcement-row:hover {
+  cursor: pointer;
+  background-color: var(--funny-grey);
+}
+
 
 .announcements-container {
   display: grid;
@@ -269,8 +298,10 @@ body {
 
 .trending-user {
   display: grid;
+  height: 100%;
   grid-template-columns: 75px 1fr;
   gap: 15px;
+  padding: 0 30px;
   font-weight: 600;
   align-items: center;
 }
@@ -278,13 +309,6 @@ body {
 .trending-user p:last-of-type {
   color: grey;
   font-weight: normal;
-}
-
-.card {
-  display: grid;
-  grid-template-rows: 2rem 1fr 3rem;
-  gap: 10px;
-  padding: 25px;
 }
 
 .card h3 {
@@ -299,6 +323,6 @@ body {
   display: grid;
   align-items: center;
   justify-content: end;
-  grid-template-columns: repeat(3, 25px);
+  grid-template-columns: repeat(3, 50px);
   gap: 15px;
 }
