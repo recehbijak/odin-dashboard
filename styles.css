@@ -75,8 +75,9 @@ body {
 }
 
 .dashboard-logo {
-    margin: 15px 0;
+    margin: 15px 5px;
     display: grid;
+    gap: 15px;
     grid-template-columns: 50px 1fr;
     font-size: 2rem;
     align-items: center;
@@ -87,7 +88,7 @@ body {
     grid-template-columns: 40px 1fr;
     align-items: center;
     padding: 1rem 0;
-    gap: 15px;
+    gap: 25px;
     border-radius: 10px;
 }
 
@@ -325,4 +326,14 @@ body {
   justify-content: end;
   grid-template-columns: repeat(3, 50px);
   gap: 15px;
+}
+
+.sidebar .nav-icon,
+.dashboard-logo img {
+  filter: invert(100%) 
+          sepia(2%) 
+          saturate(7421%) 
+          hue-rotate(116deg) 
+          brightness(124%) 
+          contrast(99%);
 }
